@@ -5,9 +5,16 @@ export const baseServices = axios.create({
   baseURL: resource,
   headers: {
     "Content-Type": "application/json",
-    Authorization: `Bearer`,
   },
 });
+
+axios.interceptors.request.use(
+    async (config) => {
+        const token = localStorage.getItem("access_token");
+        config.headers.setAuthorization(`Bearer ${token}`);
+        return config;
+    }
+);
 
 axios.interceptors.response.use(
   function (response) {
