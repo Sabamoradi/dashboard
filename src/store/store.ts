@@ -1,10 +1,23 @@
-import { configureStore } from "@reduxjs/toolkit";
+import generalReducer from './general/slice';
+import {
+  Action,
+  ThunkAction,
+  configureStore,
+} from '@reduxjs/toolkit';
 
-const store = configureStore({
+export const store = configureStore({
   reducer: {
-    //
+    general: generalReducer,
   },
+  devTools: process.env.NODE_ENV !== 'production',
 });
 
-export default store;
-//i don't get configs for phr project
+export type AppDispatch = typeof store.dispatch;
+export type RootState = ReturnType<typeof store.getState>;
+export type AppThunk<ReturnType = void> = ThunkAction<
+  ReturnType,
+  RootState,
+  unknown,
+  Action<string>
+>;
+
