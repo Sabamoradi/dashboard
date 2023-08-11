@@ -1,0 +1,7 @@
+@use "src/styles/main.scss" as *;
+
+.main-wrapper{
+    padding: 10px;
+    width: calc(100vw - 208px);
+    float: left;
+}

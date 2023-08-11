@@ -1,6 +1,7 @@
 import { ReactNode } from "react";
 import Header from "../Header";
 import SideBar from "../Sidebar";
+import "./style.scss";
 
 interface Props {
   children: ReactNode;
@@ -12,7 +13,7 @@ function MainLayout(props: Props) {
     <div className="pg-container">
       <Header />
       <SideBar />
-      {children}
+      <div className="main-wrapper">{children}</div>
     </div>
   );
 }

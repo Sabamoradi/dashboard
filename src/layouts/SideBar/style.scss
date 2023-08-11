@@ -5,21 +5,53 @@
   float: right;
   padding: 64px 20px 0 20px;
   height: calc(100vh - 64px);
+  box-shadow: -3px 0 0 #00000006;
   .items {
     list-style: none;
     .item {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
       height: 40px;
       margin-bottom: 8px;
       cursor: pointer;
-      .item_left {
+      overflow: hidden;
+      &.item_height {
+        height: 100%;
+        .item_left {
+          p {
+            color: $primary-red;
+            
+          }
+          object{
+            
+          }
+        }
+      }
+      .item_top {
         display: flex;
-        direction: rtl;
+        justify-content: space-between;
         align-items: center;
-        img {
-          padding-left: toRem(10);
+        .item_left {
+          display: flex;
+          direction: rtl;
+          align-items: center;
+          font-size: toRem(14);
+          p{
+            padding-right: toRem(10);
+          }
+          
+        }
+        .item_right {
+          .rotate-item {
+            transform: rotate(180deg);
+          }
+        }
+      }
+      .item_bottom {
+        margin-top: toRem(8);
+        padding-top: toRem(10);
+        p {
+          font-size: toRem(14);
+          line-height: toRem(22);
+          margin-bottom: toRem(10);
         }
       }
     }
