@@ -7,5 +7,21 @@
   height: calc(100vh - 64px);
   .items {
     list-style: none;
+    .item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 40px;
+      margin-bottom: 8px;
+      cursor: pointer;
+      .item_left {
+        display: flex;
+        direction: rtl;
+        align-items: center;
+        img {
+          padding-left: toRem(10);
+        }
+      }
+    }
   }
 }
