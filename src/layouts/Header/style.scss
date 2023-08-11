@@ -1,0 +1,6 @@
+@use 'src/styles/main.scss' as *;
+
+.header-wrapper{
+    background-color: $primary-red;
+    height: toRem(64);
+}

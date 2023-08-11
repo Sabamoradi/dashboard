@@ -1,0 +1,11 @@
+@use "src/styles/main.scss" as *;
+
+.side-wrapper {
+  width: 208px;
+  float: right;
+  padding: 64px 20px 0 20px;
+  height: calc(100vh - 64px);
+  .items {
+    list-style: none;
+  }
+}
