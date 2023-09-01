@@ -1,0 +1,9 @@
+@use 'src/styles/main.scss' as *;
+
+.customer-container{
+    padding: toRem(40) toRem(24);
+    
+    h2{
+        font-size: toRem(24);
+    }
+}

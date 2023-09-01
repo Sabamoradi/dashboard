@@ -1,0 +1,25 @@
+@use "src/styles/main.scss" as *;
+
+.empty-container {
+  width: 100%;
+  padding-top: toRem(40);
+  height: calc(100vh - 200px);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  .empty-text {
+    width: 50%;
+    p {
+      text-align: center;
+      font-size: toRem(14);
+      line-height: toRem(30);
+    }
+  }
+  button {
+    margin-top: toRem(23);
+    width: 100% ; 
+    height: auto;
+    white-space:pre-wrap;
+    @include fontFamilyClass;
+  }
+}
