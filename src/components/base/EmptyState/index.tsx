@@ -2,15 +2,17 @@ import "./style.scss";
 import { EmptyIcon } from "../../../assets/icons";
 import { localTexts } from "../../../locals/text";
 import BaseButton from "../Button";
+import { ReactNode } from "react";
 
 //TODO
 interface Props {
   text?: string;
   btnText?: any;
+  children:ReactNode
 }
 
 const EmptyState = (props: Props) => {
-  const { text, btnText } = props;
+  const { text, btnText,children } = props;
 
   const clickBtn = () => {
     alert("hello");
@@ -21,7 +23,8 @@ const EmptyState = (props: Props) => {
       <EmptyIcon />
       <div className="empty-text">
         <p>{text}</p>
-        <BaseButton type="primary" text={btnText} clickBtn={() => clickBtn()} />
+        {children}
+        {/* <BaseButton type="primary" text={btnText} clickBtn={() => clickBtn()} /> */}
       </div>
     </div>
   );

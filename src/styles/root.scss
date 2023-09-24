@@ -22,6 +22,14 @@ ul {
   box-sizing: border-box !important;
 }
 
-.font-data {
+.font-data,
+.ant-form-item-label,
+.ant-tabs,
+.ant-input {
   font-family: IRANYekan !important;
+}
+.ant-tabs {
+  .ant-tabs-tab {
+    padding-left: 10px;
+  }
 }
