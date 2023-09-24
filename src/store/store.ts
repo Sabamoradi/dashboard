@@ -1,4 +1,5 @@
 import generalReducer from './general/slice';
+import customerReducer from './customer/slice'
 import {
   Action,
   ThunkAction,
@@ -8,6 +9,7 @@ import {
 export const store = configureStore({
   reducer: {
     general: generalReducer,
+    customer:customerReducer
   },
   devTools: process.env.NODE_ENV !== 'production',
 });
