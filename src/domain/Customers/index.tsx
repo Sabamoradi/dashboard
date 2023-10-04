@@ -7,9 +7,14 @@ import { Modal, Tabs } from "antd";
 import { Button, TabsProps } from "antd";
 import FirstCreateTab from "./container/FirstCreateTab";
 import SecondCreateTab from "./container/SecondCreateTab";
+import CustomerTable from "./container/Table";
 
 const Customers = () => {
-  const [listData, setListData] = useState([]);
+  const [listData, setListData] = useState([
+    {
+      id:1
+    }
+  ]);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const onChange = (key: string) => {
@@ -43,7 +48,7 @@ const Customers = () => {
           />
         </EmptyState>
       ) : (
-        <div>hello</div>
+        <CustomerTable />
       )}
 
       <Modal

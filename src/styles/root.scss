@@ -25,11 +25,17 @@ ul {
 .font-data,
 .ant-form-item-label,
 .ant-tabs,
-.ant-input {
+.ant-input,
+.ant-table-wrapper,
+.ant-table-column-title,
+.ant-table-cell {
   font-family: IRANYekan !important;
 }
 .ant-tabs {
   .ant-tabs-tab {
     padding-left: 10px;
   }
+}
+.ant-table-wrapper {
+  direction: rtl;
 }

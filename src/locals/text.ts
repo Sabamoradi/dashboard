@@ -11,5 +11,7 @@ export const localTexts = {
   address:"آدرس",
   addAddress:"آدرس را وارد کنید",
   close:"بستن",
-  submit:"افزودن"
+  submit:"افزودن",
+  customer:"مشتری",
+  customerSubsDate:"تاریخ عضویت"
 };
