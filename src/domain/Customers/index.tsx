@@ -51,6 +51,22 @@ const Customers = () => {
         open={isModalOpen}
         onCancel={() => setIsModalOpen(false)}
         width={700}
+        footer={[
+          <Button
+            key="back"
+            className="font-data"
+            onClick={() => setIsModalOpen(false)}
+          >
+            {localTexts.close}
+          </Button>,
+          <Button
+            key="submit"
+            className="font-data"
+            onClick={() => setIsModalOpen(false)}
+          >
+            {localTexts.submit}
+          </Button>,
+        ]}
       >
         <Tabs
           defaultActiveKey="1"

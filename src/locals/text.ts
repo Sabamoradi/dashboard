@@ -5,5 +5,11 @@ export const localTexts = {
   handyAdd:"افزودن دستی",
   addWithCSV:"افزودن با فایل CSV",
   nameAndLastName:"نام و نام خانوادگی",
-  fillNameAndLastName:"نام و نام خانوادگی مشتری را وارد کنید."
+  fillNameAndLastName:"نام و نام خانوادگی مشتری را وارد کنید.",
+  phone:"شماره همراه",
+  addPhoneNumber:"شماره همراه مشتری را وارد کنید",
+  address:"آدرس",
+  addAddress:"آدرس را وارد کنید",
+  close:"بستن",
+  submit:"افزودن"
 };
