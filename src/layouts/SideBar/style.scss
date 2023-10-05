@@ -18,10 +18,8 @@
         .item_left {
           p {
             color: $primary-red;
-            
           }
-          object{
-            
+          object {
           }
         }
       }
@@ -34,10 +32,15 @@
           direction: rtl;
           align-items: center;
           font-size: toRem(14);
-          p{
+          p {
             padding-right: toRem(10);
           }
-          
+
+          &[data-is-selected="true"] {
+            p {
+              color: $primary-red;
+            }
+          }
         }
         .item_right {
           .rotate-item {

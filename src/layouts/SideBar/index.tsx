@@ -2,9 +2,16 @@ import "./style.scss";
 import { MenuItems } from "../../configs/menuItem";
 import { useState } from "react";
 import { ChevronIcon } from "../../assets/icons";
+import {
+  useNavigate,
+  useLocation,
+} from 'react-router-dom';  
 
 const SideBar = () => {
   const [toggleId, setToggleId] = useState<number | null>(-1);
+
+  const navigate = useNavigate();
+  const { pathname } = useLocation();
 
   const openItem = (value: number) => {
     if (toggleId === value) {
@@ -14,8 +21,8 @@ const SideBar = () => {
     }
   };
 
-  const navigate = (val: string) => {
-    console.log(val);
+  const navigateRoute = (val: string) => {
+    navigate(val)
   };
   return (
     <div className="side-wrapper">
@@ -26,12 +33,12 @@ const SideBar = () => {
               className={`item ${toggleId === el.id ? "item_height" : ""} `}
               key={el.id}
               onClick={() =>
-                el.children ? openItem(el.id) : navigate(el.route)
+                el.children ? openItem(el.id) : navigateRoute(el.route)
               }
             >
               <div className="item_top">
-                <div className="item_left">
-                  <object data={el.icon}></object>
+                <div className="item_left" data-is-selected={el.route === pathname}>
+                  <object className="item_icon" data={el.icon}></object>
                   <p>{el.title}</p>
                 </div>
                 {el.children && (
