@@ -13,5 +13,11 @@ export const localTexts = {
   close:"بستن",
   submit:"افزودن",
   customer:"مشتری",
-  customerSubsDate:"تاریخ عضویت"
+  customerSubsDate:"تاریخ عضویت",
+  averagePayment:"میانگین پرداختی",
+  OrderNumber:"تعداد سفارش",
+  customerValue:"ارزش مشتری",
+  customerTag:"برچسب مشتری",
+  status:'وضعیت',
+  action:"عملیات"
 };

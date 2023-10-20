@@ -5,13 +5,17 @@ import { Input, Table, Tag, Space } from "antd";
 import type { ColumnType, ColumnsType } from "antd/es/table";
 import "./style.scss";
 import { localTexts } from "../../../../locals/text";
+import { Fragment } from "react";
 
 interface DataType {
   key: string;
   name: string;
   subsDate: string;
+  averagePayment: string;
+  OrderNumber: number;
+  customerValue: string;
   tags: string[];
-  address: string;
+  tagsStatus?: string[];
 }
 
 type DataIndex = keyof DataType;
@@ -21,15 +25,21 @@ const data: DataType[] = [
     key: "1",
     name: "علیرضا رزاقی طاهری",
     subsDate: "1401/10/10",
+    averagePayment: "490,000 تومان",
+    OrderNumber: 15,
+    customerValue: "7،350,000 تومان",
     tags: ["nice"],
-    address:'aaa'
+    tagsStatus: ["oh"],
   },
   {
     key: "2",
     name: "پارسا قدیم خانی",
     subsDate: "1401/10/10",
+    averagePayment: "490,000 تومان",
+    OrderNumber: 20,
+    customerValue: "7،350,000 تومان",
     tags: ["loser"],
-    address:'bbb'
+    tagsStatus: ["no"],
   },
 ];
 
@@ -57,21 +67,37 @@ const CustomerTable = () => {
       title: `${localTexts.customer}`,
       dataIndex: "name",
       key: "name",
-      width: "15%",
       ...getColumnSearchProps("name"),
     },
     {
       title: `${localTexts.customerSubsDate}`,
       dataIndex: "subsDate",
       key: "subsDate",
-      width: "15%",
-      sorter: true,
+      // sorter: true,
     },
     {
-      title: "Tags",
+      title: `${localTexts.averagePayment}`,
+      dataIndex: "averagePayment",
+      key: "averagePayment",
+      // sorter: true,
+    },
+    {
+      title: `${localTexts.OrderNumber}`,
+      dataIndex: "OrderNumber",
+      key: "OrderNumber",
+      // sorter: true,
+    },
+    {
+      title: `${localTexts.customerValue}`,
+      dataIndex: "customerValue",
+      key: "customerValue",
+      // sorter: true,
+    },
+    {
+      title: `${localTexts.customerTag}`,
       key: "tags",
       dataIndex: "tags",
-      sorter: true,
+      // sorter: true,
       render: (tags: string[]) => (
         <span>
           {tags.map((tag) => {
@@ -80,7 +106,38 @@ const CustomerTable = () => {
               color = "volcano";
             }
             return (
-              <Tag color={color} key={tag}>
+              <Fragment key={`${tag}-wrapper`}>
+                <Tag color={color} key={`${tag}-first`}>
+                  {tag.toUpperCase()}
+                </Tag>
+                <Tag color={color} key={`${tag}-second`}>
+                  {tag.toUpperCase()}
+                </Tag>
+              </Fragment>
+            );
+          })}
+        </span>
+      ),
+    },
+    {
+      title: `${localTexts.status}`,
+      key: "tagsStatus",
+      dataIndex: "tagsStatus",
+      filters: [
+        {
+          text: "text",
+          value: "value",
+        },
+      ],
+      render: (tagsStatus: string[]) => (
+        <span>
+          {tagsStatus.map((tag, index) => {
+            let color = tag.length > 5 ? "geekblue" : "green";
+            if (tag === "oh") {
+              color = "volcano";
+            }
+            return (
+              <Tag color={color} key={`${index}-status`}>
                 {tag.toUpperCase()}
               </Tag>
             );
@@ -89,26 +146,17 @@ const CustomerTable = () => {
       ),
     },
     {
-        title: 'Address',
-        dataIndex: 'address',
-        filters: [
-          {
-            text: 'London',
-            value: 'London',
-          },
-          {
-            text: 'New York',
-            value: 'New York',
-          },
-        ],
-      },
-    {
-      title: "Action",
+      title: `${localTexts.action}`,
       key: "action",
       render: (_, record) => (
-        <Space size="middle">
-          <a onClick={() => clickItem()}>جزئیات</a>
-        </Space>
+        <>
+          <Space className="action-item" size="middle">
+            <a onClick={() => clickItem()}>تغییر وضعیت</a>
+          </Space>
+          <Space className="action-item" size="middle">
+            <a onClick={() => clickItem()}>جزئیات</a>
+          </Space>
+        </>
       ),
     },
   ];
