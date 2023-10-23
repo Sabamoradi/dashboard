@@ -73,31 +73,31 @@ const CustomerTable = () => {
       title: `${localTexts.customerSubsDate}`,
       dataIndex: "subsDate",
       key: "subsDate",
-      // sorter: true,
+      sorter: true,
     },
     {
       title: `${localTexts.averagePayment}`,
       dataIndex: "averagePayment",
       key: "averagePayment",
-      // sorter: true,
+      sorter: true,
     },
     {
       title: `${localTexts.OrderNumber}`,
       dataIndex: "OrderNumber",
       key: "OrderNumber",
-      // sorter: true,
+      sorter: true,
     },
     {
       title: `${localTexts.customerValue}`,
       dataIndex: "customerValue",
       key: "customerValue",
-      // sorter: true,
+      sorter: true,
     },
     {
       title: `${localTexts.customerTag}`,
       key: "tags",
       dataIndex: "tags",
-      // sorter: true,
+      sorter: true,
       render: (tags: string[]) => (
         <span>
           {tags.map((tag) => {

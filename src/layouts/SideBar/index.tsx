@@ -37,7 +37,7 @@ const SideBar = () => {
               }
             >
               <div className="item_top">
-                <div className="item_left" data-is-selected={el.route === pathname}>
+                <div className="item_left" data-is-selected={el.route === pathname && el.baseRoute}>
                   <object className="item_icon" data={el.icon}></object>
                   <p>{el.title}</p>
                 </div>

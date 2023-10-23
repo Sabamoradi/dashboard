@@ -19,5 +19,7 @@ export const localTexts = {
   customerValue:"ارزش مشتری",
   customerTag:"برچسب مشتری",
   status:'وضعیت',
-  action:"عملیات"
+  action:"عملیات",
+  categoryEmptyState:'دسته‌بندی‌‌ای برای مشتریان تعریف نکرده‌اید.',
+  addCategory:'افزودن دسته‌بندی'
 };

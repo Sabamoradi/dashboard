@@ -4,6 +4,7 @@ export const MenuItems = [
     title: "داشبورد",
     icon: require("../assets/icons/menu/dashboard.svg").default,
     route: "/",
+    baseRoute:true
   },
   {
     id: 2,
@@ -11,12 +12,14 @@ export const MenuItems = [
     icon: require("../assets/icons/menu/customer.svg").default,
     activeIcon:require("../assets/icons/menu/customer_a.svg"),
     route: "/customers",
+    baseRoute:true
   },
   {
     id: 3,
     title: "مشوق ها",
     icon: require("../assets/icons/menu/dashboard.svg").default,
     route: "/",
+    baseRoute:false,
     children: [
       {
         id: 31,
@@ -29,5 +32,13 @@ export const MenuItems = [
         route: "",
       },
     ],
+  },
+  {
+    id: 4,
+    title: "دسته بندی",
+    icon: require("../assets/icons/menu/customer.svg").default,
+    activeIcon:require("../assets/icons/menu/customer_a.svg"),
+    route: "/category",
+    baseRoute:true
   },
 ];

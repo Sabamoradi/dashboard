@@ -12,8 +12,10 @@ function MainLayout(props: Props) {
   return (
     <div className="pg-container">
       <Header />
+      <div className="bg-wrapper">
       <SideBar />
       <div className="main-wrapper">{children}</div>
+      </div>
     </div>
   );
 }
