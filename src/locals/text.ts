@@ -24,5 +24,8 @@ export const localTexts = {
   addCategory:'افزودن دسته‌بندی',
   categoryName:'عنوان دسته‌بندی',
   numberOfCustomer:'تعداد مشتریان',
-  statusOfCategory:'وضعیت دسته‌بندی'
+  statusOfCategory:'وضعیت دسته‌بندی',
+  goalCutsomer:'مشتریان هدف',
+  amountOfCredit:'میزان اعتبار',
+  rangOfUsingCredit:'بازه مصرف اعتبار'
 };

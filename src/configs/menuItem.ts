@@ -42,7 +42,7 @@ export const MenuItems = [
       {
         id: 43,
         title: "هدیه اعتباری",
-        route: "",
+        route: "/incentiveCreditGift",
       },
       {
         id: 44,
