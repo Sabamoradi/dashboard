@@ -37,5 +37,8 @@ export const localTexts = {
   copounName:'عنوان کوپن',
   copounType:'نوع کوپن',
   gift:'پاداش',
-  statusOfCopoun:'وضعیت کوپن'
+  statusOfCopoun:'وضعیت کوپن',
+  present:'جایزه',
+  amountOfPresent:'میزان امتیاز',
+  statusOfGift:'وضعیت جایزه'
 };

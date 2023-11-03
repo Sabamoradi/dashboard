@@ -1,6 +1,6 @@
 import "./style.scss";
 import { useState } from "react";
-import IncentiveGiftTable from "./container/Table";
+import IncentiveCreditGiftTable from "./container/Table";
 
 const IncentiveCreditGift = () => {
   const [listData, setListData] = useState([
@@ -10,7 +10,7 @@ const IncentiveCreditGift = () => {
   ]);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  return <div>{listData.length === 0 ? "hello" : <IncentiveGiftTable />}</div>;
+  return <div>{listData.length === 0 ? "hello" : <IncentiveCreditGiftTable />}</div>;
 };
 
 export default IncentiveCreditGift;

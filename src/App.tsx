@@ -6,6 +6,7 @@ import Category from "./domain/Category";
 import IncentiveCreditGift from "./domain/IncentiveCreditGift";
 import IncentiveDiscount from "./domain/IncentiveDiscount";
 import CopounReport from "./domain/CopounReport";
+import IncentiveGift from "./domain/IncentiveGift";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/incentiveCreditGift" element={<IncentiveCreditGift />} />
           <Route path="/incentiveDiscount" element={<IncentiveDiscount />} />
           <Route path="/copounReport" element={<CopounReport />} />
+          <Route path="/incentiveGift" element={<IncentiveGift />} />
         </Routes>
       </MainLayout>
     </BrowserRouter>

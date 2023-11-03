@@ -31,7 +31,7 @@ const data: DataType[] = [
   },
 ];
 
-const IncentiveGiftTable = () => {
+const IncentiveCreditGiftTable = () => {
   const searchInput = useRef<InputRef>(null);
 
   const getColumnSearchProps = (
@@ -89,4 +89,4 @@ const IncentiveGiftTable = () => {
   );
 };
 
-export default IncentiveGiftTable;
+export default IncentiveCreditGiftTable;

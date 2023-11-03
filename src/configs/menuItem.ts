@@ -57,7 +57,7 @@ export const MenuItems = [
       {
         id: 45,
         title: "جایزه",
-        route: "",
+        route: "/incentiveGift",
       },
     ],
   },
