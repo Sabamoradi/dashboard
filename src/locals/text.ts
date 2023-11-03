@@ -27,5 +27,11 @@ export const localTexts = {
   statusOfCategory:'وضعیت دسته‌بندی',
   goalCutsomer:'مشتریان هدف',
   amountOfCredit:'میزان اعتبار',
-  rangOfUsingCredit:'بازه مصرف اعتبار'
+  rangOfUsingCredit:'بازه مصرف اعتبار',
+  DiscountName:'عنوان تخفیف',
+  discountSetting:'تنظیمات تخفیف',
+  amountOfDiscount:'مقدار تخفیف',
+  targetCustomer:'مشتریان هدف',
+  discountStatus:'وضعیت تخفیف',
+  rangOfDiscount:'زمان شروع و پایان'
 };

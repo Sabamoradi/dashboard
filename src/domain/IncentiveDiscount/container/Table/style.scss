@@ -1,0 +1,17 @@
+@use 'src/styles/main.scss' as *;
+
+.table-wrapper{
+    padding-top: toRem(16);
+}
+.action-item{
+    padding: 0 toRem(4);
+}
+
+.flex-tag{
+    display: flex;
+    flex-direction: column;
+    span{
+        margin-bottom: toRem(8);
+        text-align: center;
+    }
+}

@@ -32,7 +32,7 @@ export const MenuItems = [
       {
         id: 41,
         title: "کد تخفیف",
-        route: "",
+        route: "/incentiveDiscount",
       },
       {
         id: 42,

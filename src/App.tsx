@@ -3,7 +3,8 @@ import { BrowserRouter } from "react-router-dom";
 import MainLayout from "./layouts/Main";
 import Customers from "./domain/Customers";
 import Category from "./domain/Category";
-import IncentiveCreditGift from "./domain/IncentiveCreditGift/Category";
+import IncentiveCreditGift from "./domain/IncentiveCreditGift";
+import IncentiveDiscount from "./domain/IncentiveDiscount";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="/customers" element={<Customers />} />
           <Route path="/category" element={<Category />} />
           <Route path="/incentiveCreditGift" element={<IncentiveCreditGift />} />
+          <Route path="/incentiveDiscount" element={<IncentiveDiscount />} />
         </Routes>
       </MainLayout>
     </BrowserRouter>

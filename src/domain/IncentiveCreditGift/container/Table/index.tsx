@@ -4,7 +4,7 @@ import type { InputRef } from "antd";
 import { Input, Table, Tag, Space } from "antd";
 import type { ColumnType, ColumnsType } from "antd/es/table";
 import "./style.scss";
-import { localTexts } from "../../../../../locals/text";
+import { localTexts } from "../../../../locals/text";
 import { Fragment } from "react";
 
 interface DataType {
