@@ -27,6 +27,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        height: 100%;
         .item_left {
           display: flex;
           direction: rtl;
@@ -34,6 +35,7 @@
           font-size: toRem(14);
           p {
             padding-right: toRem(10);
+            font-size: toRem(14);
           }
 
           &[data-is-selected="true"] {

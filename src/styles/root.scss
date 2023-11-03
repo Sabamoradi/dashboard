@@ -1,4 +1,4 @@
-@forward "./constants";
+@use "src/styles/main.scss" as *;
 
 body {
   margin: 0;
@@ -38,4 +38,10 @@ ul {
 }
 .ant-table-wrapper {
   direction: rtl;
+}
+
+.red-action {
+  a{
+    color: $red-fg;
+  }
 }

@@ -21,5 +21,8 @@ export const localTexts = {
   status:'وضعیت',
   action:"عملیات",
   categoryEmptyState:'دسته‌بندی‌‌ای برای مشتریان تعریف نکرده‌اید.',
-  addCategory:'افزودن دسته‌بندی'
+  addCategory:'افزودن دسته‌بندی',
+  categoryName:'عنوان دسته‌بندی',
+  numberOfCustomer:'تعداد مشتریان',
+  statusOfCategory:'وضعیت دسته‌بندی'
 };
