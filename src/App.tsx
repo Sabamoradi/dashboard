@@ -5,6 +5,7 @@ import Customers from "./domain/Customers";
 import Category from "./domain/Category";
 import IncentiveCreditGift from "./domain/IncentiveCreditGift";
 import IncentiveDiscount from "./domain/IncentiveDiscount";
+import CopounReport from "./domain/CopounReport";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/category" element={<Category />} />
           <Route path="/incentiveCreditGift" element={<IncentiveCreditGift />} />
           <Route path="/incentiveDiscount" element={<IncentiveDiscount />} />
+          <Route path="/copounReport" element={<CopounReport />} />
         </Routes>
       </MainLayout>
     </BrowserRouter>

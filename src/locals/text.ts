@@ -33,5 +33,9 @@ export const localTexts = {
   amountOfDiscount:'مقدار تخفیف',
   targetCustomer:'مشتریان هدف',
   discountStatus:'وضعیت تخفیف',
-  rangOfDiscount:'زمان شروع و پایان'
+  rangOfDiscount:'زمان شروع و پایان',
+  copounName:'عنوان کوپن',
+  copounType:'نوع کوپن',
+  gift:'پاداش',
+  statusOfCopoun:'وضعیت کوپن'
 };
