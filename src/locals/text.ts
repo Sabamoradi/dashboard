@@ -40,5 +40,6 @@ export const localTexts = {
   statusOfCopoun:'وضعیت کوپن',
   present:'جایزه',
   amountOfPresent:'میزان امتیاز',
-  statusOfGift:'وضعیت جایزه'
+  statusOfGift:'وضعیت جایزه',
+  back:'بازگشت',
 };

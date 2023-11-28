@@ -1,0 +1,6 @@
+@use "src/styles/main.scss" as *;
+
+.crumb_wrapper {
+  margin-top: toRem(16);
+  padding: 0 toRem(24);
+}

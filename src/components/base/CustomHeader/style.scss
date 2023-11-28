@@ -1,0 +1,22 @@
+@use "src/styles/main.scss" as *;
+
+.add-header-wrapper {
+  margin-top: toRem(16);
+  padding: 0 toRem(24);
+
+  .title {
+    font-size: toRem(24);
+    font-weight: 700;
+    margin-top: toRem(5);
+  }
+
+  .header-top {
+    display: flex;
+    align-items: center;
+    line-height: toRem(24);
+    p {
+      font-size: toRem(16);
+      font-weight: 400;
+    }
+  }
+}

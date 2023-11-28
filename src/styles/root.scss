@@ -28,7 +28,8 @@ ul {
 .ant-input,
 .ant-table-wrapper,
 .ant-table-column-title,
-.ant-table-cell {
+.ant-table-cell,
+.ant-breadcrumb {
   font-family: IRANYekan !important;
 }
 .ant-tabs {
@@ -41,7 +42,7 @@ ul {
 }
 
 .red-action {
-  a{
+  a {
     color: $red-fg;
   }
 }

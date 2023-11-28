@@ -7,6 +7,7 @@ import IncentiveCreditGift from "./domain/IncentiveCreditGift";
 import IncentiveDiscount from "./domain/IncentiveDiscount";
 import CopounReport from "./domain/CopounReport";
 import IncentiveGift from "./domain/IncentiveGift";
+import AddCategory from "./domain/Category/AddCategory";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="*" element={<Navigate to="/" />} />
           <Route path="/customers" element={<Customers />} />
           <Route path="/category" element={<Category />} />
+          <Route path="/addCt" element={<AddCategory />} />
           <Route path="/incentiveCreditGift" element={<IncentiveCreditGift />} />
           <Route path="/incentiveDiscount" element={<IncentiveDiscount />} />
           <Route path="/copounReport" element={<CopounReport />} />
