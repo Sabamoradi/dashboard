@@ -42,4 +42,5 @@ export const localTexts = {
   amountOfPresent:'میزان امتیاز',
   statusOfGift:'وضعیت جایزه',
   back:'بازگشت',
+  guidLine:'راهنما'
 };
