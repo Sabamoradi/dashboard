@@ -42,5 +42,9 @@ export const localTexts = {
   amountOfPresent:'میزان امتیاز',
   statusOfGift:'وضعیت جایزه',
   back:'بازگشت',
-  guidLine:'راهنما'
+  guidLine:'راهنما',
+  writeCategoryTitle:'عنوان دسته‌بندی را وارد کنید',
+  categoryTitle:'عنوان دسته بندی',
+  filters:'فیلترها',
+  addFilter:'افزودن فیلتر'
 };

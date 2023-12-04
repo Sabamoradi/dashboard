@@ -3,7 +3,9 @@ import BaseBreadcrumb from "../../../components/base/BreadCrumb";
 import { addCategoryBreadCrumb } from "../../../configs/crumbData";
 import CustomHeader from "../../../components/base/CustomHeader";
 import { localTexts } from "../../../locals/text";
-import { ChevronDown } from "../../../assets/icons";
+import { ChevronDown, Plus } from "../../../assets/icons";
+import BaseInput from "../../../components/base/Input";
+import BaseButton from "../../../components/base/Button";
 
 const AddCategory = () => {
   return (
@@ -20,7 +22,21 @@ const AddCategory = () => {
         <div className="content-wrapper">
           <div className="content">
             <div className="content-top">
-              
+              <div className="content-item">
+                <BaseInput
+                  placeTitle={localTexts.writeCategoryTitle}
+                  labelText={localTexts.categoryTitle}
+                />
+              </div>
+            </div>
+            <div className="content-bottom">
+              <p>{localTexts.filters}</p>
+              <BaseButton
+                type="primary"
+                text={localTexts.addFilter}
+                clickBtn={() => console.log("hello")}
+                icon={<Plus />}
+              />
             </div>
           </div>
         </div>
