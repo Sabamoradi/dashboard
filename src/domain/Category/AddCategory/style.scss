@@ -32,10 +32,18 @@
         width: 25%;
       }
     }
-    .content-bottom{
+    .content-bottom {
       margin-top: toRem(16);
       display: flex;
       justify-content: space-between;
     }
+  }
+}
+
+.add-modal {
+  @include fontFamilyClass;
+  p{
+    margin-bottom: toRem(10);
+    font-size: toRem(16);
   }
 }

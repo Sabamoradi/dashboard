@@ -11,9 +11,9 @@ import CustomerTable from "./container/Table";
 
 const Customers = () => {
   const [listData, setListData] = useState([
-    {
-      id:1
-    }
+    // {
+    //   id:1
+    // }
   ]);
   const [isModalOpen, setIsModalOpen] = useState(false);
 

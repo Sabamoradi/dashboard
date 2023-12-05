@@ -46,5 +46,6 @@ export const localTexts = {
   writeCategoryTitle:'عنوان دسته‌بندی را وارد کنید',
   categoryTitle:'عنوان دسته بندی',
   filters:'فیلترها',
-  addFilter:'افزودن فیلتر'
+  addFilter:'افزودن فیلتر',
+  filter:'فیلتر'
 };
