@@ -6,7 +6,7 @@ import type { ColumnType, ColumnsType } from "antd/es/table";
 import "./style.scss";
 import { localTexts } from "../../../../locals/text";
 import { Fragment } from "react";
-
+import { useNavigate } from "react-router-dom";
 interface DataType {
   key: string;
   name: string;
@@ -16,6 +16,7 @@ interface DataType {
   customerValue: string;
   tags: string[];
   tagsStatus?: string[];
+  detailId: number;
 }
 
 type DataIndex = keyof DataType;
@@ -30,6 +31,7 @@ const data: DataType[] = [
     customerValue: "7،350,000 تومان",
     tags: ["nice"],
     tagsStatus: ["oh"],
+    detailId: 123456,
   },
   {
     key: "2",
@@ -40,11 +42,13 @@ const data: DataType[] = [
     customerValue: "7،350,000 تومان",
     tags: ["loser"],
     tagsStatus: ["no"],
+    detailId: 34567,
   },
 ];
 
 const CustomerTable = () => {
   const searchInput = useRef<InputRef>(null);
+  const navigate = useNavigate();
 
   const getColumnSearchProps = (
     dataIndex: DataIndex
@@ -59,8 +63,8 @@ const CustomerTable = () => {
     ),
   });
 
-  const clickItem = () => {
-    alert("hello");
+  const clickItem = (record: number) => {
+    navigate(`/detail/${record}`);
   };
   const columns: ColumnsType<DataType> = [
     {
@@ -151,10 +155,10 @@ const CustomerTable = () => {
       render: (_, record) => (
         <>
           <Space className="action-item" size="middle">
-            <a onClick={() => clickItem()}>تغییر وضعیت</a>
+            <a onClick={() => clickItem(record.detailId)}>تغییر وضعیت</a>
           </Space>
           <Space className="action-item" size="middle">
-            <a onClick={() => clickItem()}>جزئیات</a>
+            <a onClick={() => clickItem(record.detailId)}>جزئیات</a>
           </Space>
         </>
       ),

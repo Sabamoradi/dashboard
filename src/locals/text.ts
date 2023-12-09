@@ -47,5 +47,9 @@ export const localTexts = {
   categoryTitle:'عنوان دسته بندی',
   filters:'فیلترها',
   addFilter:'افزودن فیلتر',
-  filter:'فیلتر'
+  filter:'فیلتر',
+  // customerdetailsTitle:[
+  //   'لیست مشتریان',
+  //   ''
+  // ]
 };

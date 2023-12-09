@@ -8,12 +8,13 @@ import { Button, TabsProps } from "antd";
 import FirstCreateTab from "./container/FirstCreateTab";
 import SecondCreateTab from "./container/SecondCreateTab";
 import CustomerTable from "./container/Table";
+import { Plus } from "../../assets/icons";
 
 const Customers = () => {
   const [listData, setListData] = useState([
-    // {
-    //   id:1
-    // }
+    {
+      id: 1,
+    },
   ]);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -38,6 +39,14 @@ const Customers = () => {
     <div className="customer-container">
       <div className="customer-top">
         <h2>{localTexts.customerList}</h2>
+        <div className="customer-btn">
+          <BaseButton
+            type="primary"
+            text={localTexts.addCustomer}
+            icon={<Plus />}
+            clickBtn={() => setIsModalOpen(true)}
+          />
+        </div>
       </div>
       {listData.length === 0 ? (
         <EmptyState text={localTexts.customerEmptyState}>
