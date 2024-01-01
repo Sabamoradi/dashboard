@@ -5,9 +5,23 @@
   padding: 0 toRem(24);
 
   .title {
-    font-size: toRem(24);
-    font-weight: 700;
     margin-top: toRem(5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    p{
+      font-size: toRem(24);
+      font-weight: 700;
+    }
+    .status-wrapper{
+      display: flex;
+      align-items: center;
+      p{
+        font-weight: 500;
+        font-size: toRem(12);
+        padding-left: toRem(10);
+      }
+    }
   }
 
   .header-top {

@@ -48,6 +48,15 @@ export const localTexts = {
   filters:'فیلترها',
   addFilter:'افزودن فیلتر',
   filter:'فیلتر',
+  customerInfo:'اطلاعات مشتری',
+  wallet:'کیف پول',
+  orders:'سفارش‌ها',
+  transactions:'پرداخت‌ها',
+  helper:'مشوق‌ها',
+  comments:'نظرات',
+  memberCategory:'دسته‌بندی های عضو',
+  customerDetail:'جزئیات مشتری',
+  changeStatus:"تغییر وضعیت"
   // customerdetailsTitle:[
   //   'لیست مشتریان',
   //   ''

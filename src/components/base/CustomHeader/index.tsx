@@ -2,6 +2,7 @@ import { Breadcrumb } from "antd";
 import "./style.scss";
 import { localTexts } from "../../../locals/text";
 import { ChevronLeft } from "../../../assets/icons";
+import BaseButton from "../Button";
 
 interface Props {
   title: string;
@@ -20,6 +21,12 @@ const CustomHeader = (props: Props) => {
         <p>
         {title}
         </p>
+        <div className="status-wrapper">
+          <div className="status">
+            <p>فعال</p>
+          </div>
+          <BaseButton text={localTexts.changeStatus} clickBtn={()=>alert('hello')} type={'primary'}/>
+        </div>
       </div>
     </div>
   );
